@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+.flex-container-casesheader {
+  display: flex;
+  background-color: #008e97;
+  overflow: auto;
+  color: #fff;
+  height: 40px;
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 100%;
+  padding: 3px;
+}
+.flex-container-complexarea {
+  display: flex;
+  background-color: #008e97;
+  overflow: auto;
+  color: #fff;
+  height: 35px;
+  font-size: x-large;
+  width: 100%;
+  padding: 3px;
+}
+.flex-container-schoolname {
+  display: flex;
+  background-color: #008e97;
+  overflow: auto;
+  color: #fff;
+  padding: 3px;
+  width: 100%;
+}
+
+.flex-container-schoolpanel {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  /*overflow:auto;*/
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+#datadetails {
+  width: 100%;
+}
+.flex-container-dataline {
+  display: flex;
+  width: 100%;
+  background-color: aliceblue;
+  /*overflow:auto;*/
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.flex-child-ca1 {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 9;
+  border-collapse: collapse;
+}
+.flex-child-ca2 {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 1;
+  border-collapse: collapse;
+}
+.flex-child-dl-complex {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 3;
+  border-collapse: collapse;
+}
+.flex-child-dl-complex-header {
+  border: 0px solid gray;
+  padding: 3px;
+  font-weight: bold;
+  flex: 3;
+  border-collapse: collapse;
+}
+.flex-child-dl-schoolname {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 2;
+  border-collapse: collapse;
+}
+.flex-child-dl-schoolname-header {
+  border: 0px solid gray;
+  padding: 3px;
+  font-weight: bold;
+  flex: 2;
+  border-collapse: collapse;
+}
+.flex-child-dl-casecount {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 1;
+  /* flex: 0 0 75px; */
+  border-collapse: collapse;
+}
+.flex-child-dl-casecount-header {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 1;
+  font-weight: bold;
+  /* flex: 0 0 75px; */
+  border-collapse: collapse;
+}
+.flex-child-dl-datereported {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 2;
+  border-collapse: collapse;
+  /* flex: 0 0 100px; */
+}
+.flex-child-dl-datereported-header {
+  border: 0px solid gray;
+  padding: 3px;
+  font-weight: bold;
+  flex: 2;
+  border-collapse: collapse;
+  /* flex: 0 0 100px; */
+}
+.flex-child-dl-datelast {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 3;
+  /* flex: 0 0 100px; */
+  border-collapse: collapse;
+}
+.flex-child-dl-datelast-header {
+  border: 0px solid gray;
+  padding: 3px;
+  font-weight: bold;
+  flex: 3;
+  /* flex: 0 0 100px; */
+  border-collapse: collapse;
+}
+.flex-child-dl-island {
+  border: 0px solid gray;
+  padding: 3px;
+  flex: 1;
+  border-collapse: collapse;
+  flex: 0 0 100px;
+}
+.flex-child-dl-island-header {
+  border: 0px solid gray;
+  padding: 3px;
+  font-weight: bold;
+  flex: 1;
+  border-collapse: collapse;
+  flex: 0 0 100px;
+}
+
+body {
+  margin-left: 30px;
+  font-family: Helvetica;
+}
+#summarybox {
+  width: 100%;
+}
+
+.casesheader {
+  background-color: coral;
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.casesheader td {
+  padding: 10px;
+}
+.casesheader {
+  background-color: coral;
+}
+.complexes {
+  background-color: #008e97;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.schools {
+  background-color: cadetblue;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+}
+.complexname {
+  width: 75%;
+}
+
+.complexcount {
+  width: 25%;
+  padding: 5px;
+}
+.schoolname {
+  width: 75%;
+  padding: 5px;
+}
+.schoolcount {
+  width: 25%;
+  padding: 5px;
+}
+
+/* .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 2.8s;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+} */
+
+.active,
+.accordion:hover {
+  background-color: #e6fffa;
+}
+.accordion {
+  /* display: flex; */
+  width: 100%;
+  padding: 5px;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;
+  border: 1px solid grey;
+  font-size: 18px;
+  align-items: center;
+}
+.panel {
+  /* width: 100%;
+  padding: 0 0px;
+  background-color: green !important;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  display: none; */
+  width: 100%;
+  padding: 0 0px;
+  background-color: aliceblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+  background-color: aliceblue;
+  overflow: auto;
+}
+h1 {
+  margin: 0px;
+}
+.summary-container {
+  border: 2px solid gray;
+  background-color: aliceblue;
+  overflow: auto;
+  padding: 7px;
+}
+.summary-flex-child-label {
+  font-weight: bolder;
+  width: 200px;
+}
+.summary-flex-child-data {
+  width: 200px;
+}
+.summary-flex-child-data-count {
+  width: 200px;
+  color: red;
+  font-weight: bold;
+}
+.flex-child {
+  border: 2px solid gray;
+  padding: 10px;
+  flex: 1;
+  width: 45% !important;
+  height: auto !important;
+  position: relative;
+}
+.flex-child2 {
+  border: 2px solid gray;
+  padding: 0px;
+  flex: 1;
+}
+.flex-child3 {
+  border: 2px solid gray;
+  padding: 10px;
+  flex: 1;
+  color: red;
+}
+.flex-child-bar {
+  border: 2px solid gray;
+  padding: 10px;
+  flex: 1;
+  width: 45% !important;
+  height: auto !important;
+  position: relative;
+}
+.caselisting {
+  margin: 2px;
+}
+
+[class="islandspiechart-legend"] {
+  list-style: none;
+  cursor: pointer;
+  padding-left: 0;
+}
+[class="islandspiechart-legend"] li {
+  display: inline-block;
+  padding: 0 5px;
+}
+[class="islandspiechart-legend"] li.hidden {
+  text-decoration: line-through;
+}
+[class="islandspiechart-legend"] li span {
+  border-radius: 5px;
+  display: inline-block;
+  height: 10px;
+  margin-right: 10px;
+  width: 10px;
+}
